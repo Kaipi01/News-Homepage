@@ -1,0 +1,25 @@
+{
+  "name": "news-homepage",
+  "version": "1.0.0",
+  "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch src/scss:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaipi01/News-Homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaipi01/News-Homepage/issues"
+  },
+  "homepage": "https://github.com/Kaipi01/News-Homepage#readme",
+  "devDependencies": {
+    "sass": "^1.56.1",
+    "stylelint": "^14.15.0",
+    "stylelint-config-property-sort-order-smacss": "^9.0.0"
+  }
+}
