@@ -19,3 +19,7 @@ node_modules/
 dist/
 .cache
 .vscode
+
+plan.txt
+style-guide.md
+README-template.md
