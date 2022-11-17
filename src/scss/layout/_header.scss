@@ -1,0 +1,7 @@
+@use '../utils/visually-hide' as *;
+
+.header {
+    &__title {
+        @extend %visually-hide;
+    }
+}
