@@ -1,3 +1,23 @@
+@use "./utils/variables" as *;
+@use "./utils/fonts";
+@use "./components/link";
+@use "./components/abbr";
+@use "./layout/header";
+@use "./layout/nav";
+@use "./layout/content";
+@use "./layout/hero";
+@use "./layout/news";
+@use "./layout/articles";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: red;
+  background-color: $Off-white;
+  font-family: $Font-Family;
+  font-size: $Font-Size;
+  min-height: 100vh;
 }
