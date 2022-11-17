@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <div class="content">
+    <div class="container">
       <header class="header">
         <h1 class="header__title">News Homepage</h1>
         <nav class="nav">
@@ -39,7 +39,7 @@
               alt="close menu"
             />
           </button>
-          <ul class="nav__menu">
+          <ul class="nav__menu nav__menu--hide">
             <li><a class="link nav__menu-link" href="#Home">Home</a></li>
             <li><a class="link nav__menu-link" href="#New">New</a></li>
             <li><a class="link nav__menu-link" href="#Popular">Popular</a></li>
@@ -52,19 +52,19 @@
           </ul>
         </nav>
       </header>
-      <main>
+      <main class="content">
         <article class="hero">
           <h2 class="hero__title">
             The Bright <br />
             Future of Web 3.0?
           </h2>
           <img
-            class="hero__img-mobile"
+            class="hero__img hero__img-mobile"
             src="./assets/images/image-web-3-mobile.jpg"
             alt="colorful undefined shapes"
           />
           <img
-            class="hero__img-desktop"
+            class="hero__img hero__img-desktop"
             src="./assets/images/image-web-3-desktop.jpg"
             alt="colorful undefined shapes"
           />
@@ -89,7 +89,6 @@
               <abbr class="abbr" title="Electric Vehicles">EV</abbr>s?
             </p>
           </article>
-          <hr class="news__hr" />
           <article class="news__article">
             <h3 class="news__article-title">
               <a class="link" href="#article3"
@@ -104,7 +103,6 @@
               generation?
             </p>
           </article>
-          <hr class="news__hr" />
           <article class="news__article">
             <h3 class="news__article-title">
               <a class="link" href="#article4"
@@ -124,7 +122,7 @@
           <h2 class="articles__head">More articles</h2>
           <ol class="articles__list">
             <li>
-              <article>
+              <article class="articles__content">
                 <h3 class="articles__title">
                   <a class="link" href="#article5">
                     Reviving Retro
@@ -136,7 +134,7 @@
                   src="./assets/images/image-retro-pcs.jpg"
                   alt="retro computers"
                 />
-                <p>
+                <p class="articles__text">
                   What happens when old
                   <abbr class="abbr" title="Personal Computer">PC</abbr>s are
                   given modern upgrades?
@@ -144,7 +142,7 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="articles__content">
                 <h3 class="articles__title">
                   <a class="link" href="#article6">Top 10 laptops of 2022</a>
                 </h3>
@@ -153,11 +151,11 @@
                   src="./assets/images/image-top-laptops.jpg"
                   alt="laptop keyboard"
                 />
-                <p>Our best picks for various needs and budgets.</p>
+                <p class="articles__text">Our best picks for various needs and budgets.</p>
               </article>
             </li>
             <li>
-              <article>
+              <article class="articles__content">
                 <h3 class="articles__title">
                   <a class="link" href="#article7">The Growth of Gaming</a>
                 </h3>
@@ -166,7 +164,7 @@
                   src="./assets/images/image-gaming-growth.jpg"
                   alt="pad from the console"
                 />
-                <p>How the pandemic has sparked fresh oppurtunities.</p>
+                <p class="articles__text">How the pandemic has sparked fresh oppurtunities.</p>
               </article>
             </li>
           </ol>
