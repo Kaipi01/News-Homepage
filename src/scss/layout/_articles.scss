@@ -1,0 +1,60 @@
+@use "../utils/variables" as *;
+@use "../utils/visually-hide" as *;
+
+.articles {
+  counter-reset: list;
+
+  @media (min-width: $Tablet) {
+    grid-column: span 3;
+  }
+
+  &__head {
+    @extend %visually-hide;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: -webkit-max-content 1fr;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__img {
+    grid-row: span 2;
+    order: -1;
+    max-width: 100px;
+  }
+
+  &__title {
+    &::before {
+      content: "0" counter(list);
+      display: block;
+      margin-bottom: 10px;
+      color: $Grayish-Blue;
+      font-size: 2rem;
+      counter-increment: list;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+
+    @media (min-width: $Tablet) {
+        li {
+            width: 31%;
+        }
+    }
+  }
+
+  &__text {
+    margin-top: -10px;
+    color: $Dark-Grayish-Blue;
+    line-height: 1.6;
+  }
+}
