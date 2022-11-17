@@ -1,0 +1,32 @@
+@use "../utils/variables" as *;
+
+.news {
+  padding: 25px 15px 10px 15px;
+  background-color: $Very-Dark-Blue;
+  color: $Grayish-Blue;
+
+  &__title {
+    margin-bottom: 15px;
+    color: $Soft-Orange;
+    font-size: 1.8rem;
+  }
+
+  &__article {
+    margin: 20px 0;
+    border-bottom: 2px solid $Dark-Grayish-Blue;
+
+    &:last-child {
+      margin-bottom: 0;
+      border: none;
+    }
+
+    &-title {
+      margin-bottom: 10px;
+      color: $Off-white;
+    }
+
+    &-text {
+      padding-bottom: 20px;
+    }
+  }
+}
