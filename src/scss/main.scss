@@ -5,6 +5,7 @@
 @use "./layout/header";
 @use "./layout/nav";
 @use "./layout/content";
+@use "./layout/container";
 @use "./layout/hero";
 @use "./layout/news";
 @use "./layout/articles";
@@ -19,5 +20,6 @@ body {
   background-color: $Off-white;
   font-family: $Font-Family;
   font-size: $Font-Size;
+  overflow-x: hidden;
   min-height: 100vh;
 }
