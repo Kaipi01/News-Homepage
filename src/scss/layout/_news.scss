@@ -5,15 +5,37 @@
   background-color: $Very-Dark-Blue;
   color: $Grayish-Blue;
 
+  @media (min-width: $Phone) {
+    text-align: center;
+  }
+
+  @media (min-width: $Tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    padding-bottom: 10px;
+    text-align: start;
+  }
+
   &__title {
     margin-bottom: 15px;
     color: $Soft-Orange;
     font-size: 1.8rem;
+
+    @media (min-width: $Tablet) {
+      font-size: 2.5rem;
+    }
   }
 
   &__article {
     margin: 20px 0;
     border-bottom: 2px solid $Dark-Grayish-Blue;
+
+    @media (min-width: $Tablet) {
+      margin-top: 0;
+      margin-bottom: 30p;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -27,6 +49,10 @@
 
     &-text {
       padding-bottom: 20px;
+
+      @media (min-width: $Tablet) {
+        padding-bottom: 30px;
+      }
     }
   }
 }

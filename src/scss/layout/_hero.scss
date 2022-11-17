@@ -3,15 +3,27 @@
 .hero {
   display: grid;
 
+  @media (min-width: $Phone) {
+    text-align: center;
+  }
+
   @media (min-width: $Tablet) {
     grid-column: span 2;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, -webkit-max-content);
+    grid-template-rows: repeat(2, max-content);
+    align-items: flex-end;
+    text-align: start;
   }
 
   &__img {
     order: -1;
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     &-mobile {
+      @media (min-width: $Phone) {
+        margin: 0 auto;
+      }
       @media (min-width: $Tablet) {
         display: none;
       }
@@ -20,6 +32,7 @@
       display: none;
       @media (min-width: $Tablet) {
         display: block;
+        grid-column: span 2;
         max-width: 1450px;
       }
     }
@@ -29,16 +42,38 @@
     margin: 20px 0;
     font-size: 2.3rem;
     font-weight: $Font-Bold;
-    line-height: 1;
+    line-height: 1.1;
 
     @media (min-width: $Tablet) {
-      font-size: 3rem;
+      margin: 0;
+      margin-top: 15px;
+      padding-right: 20px;
+      font-size: 2.9rem;
+      letter-spacing: 2px;
+    }
+
+    @media (min-width: $Desktop) {
+      margin-top: 25px;
+      padding-right: 40px;
+      font-size: 3.3rem;
     }
   }
 
   &__text {
+    max-width: 40ch;
+    margin: 20px 0;
     color: $Dark-Grayish-Blue;
     line-height: 1.5;
+
+    @media (min-width: $Phone) {
+      margin: 20px auto;
+    }
+
+    @media (min-width: $Tablet) {
+      margin: 0;
+      margin-top: 25px;
+      line-height: 1.6;
+    }
   }
 
   &__link {
@@ -56,6 +91,15 @@
     letter-spacing: 3px;
     text-decoration: none;
     text-transform: uppercase;
+
+    @media (min-width: $Phone) {
+      margin: 0 auto;
+    }
+
+    @media (min-width: $Tablet) {
+      margin-top: 35px;
+      margin-left: 0;
+    }
 
     &:hover,
     &:focus,

@@ -6,6 +6,11 @@
 
   @media (min-width: $Tablet) {
     grid-column: span 3;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $Desktop) {
+    margin-top: 50px;
   }
 
   &__head {
@@ -41,14 +46,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     list-style: none;
     gap: 30px;
 
     @media (min-width: $Tablet) {
-        li {
-            width: 31%;
-        }
+      li {
+        width: 31%;
+      }
     }
   }
 
