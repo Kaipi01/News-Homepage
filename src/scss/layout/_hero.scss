@@ -1,0 +1,66 @@
+@use "../utils/variables" as *;
+
+.hero {
+  display: grid;
+
+  @media (min-width: $Tablet) {
+    grid-column: span 2;
+  }
+
+  &__img {
+    order: -1;
+    width: 100%;
+    max-width: 450px;
+    &-mobile {
+      @media (min-width: $Tablet) {
+        display: none;
+      }
+    }
+    &-desktop {
+      display: none;
+      @media (min-width: $Tablet) {
+        display: block;
+        max-width: 1450px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 20px 0;
+    font-size: 2.3rem;
+    font-weight: $Font-Bold;
+    line-height: 1;
+
+    @media (min-width: $Tablet) {
+      font-size: 3rem;
+    }
+  }
+
+  &__text {
+    color: $Dark-Grayish-Blue;
+    line-height: 1.5;
+  }
+
+  &__link {
+    display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-top: 20px;
+    padding: 15px 30px;
+    transition: $Transition;
+    background-color: $Soft-Red;
+    color: $Off-white;
+    font-size: 0.8rem;
+    font-weight: $Font-Bold;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $Very-Dark-Blue;
+    }
+  }
+}
