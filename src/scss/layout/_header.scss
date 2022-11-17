@@ -1,7 +1,7 @@
-@use '../utils/visually-hide' as *;
+@use "../utils/visually-hide" as *;
 
 .header {
-    &__title {
-        @extend %visually-hide;
-    }
+  &__title {
+    @extend %visually-hide;
+  }
 }
