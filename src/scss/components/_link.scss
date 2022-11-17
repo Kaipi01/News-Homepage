@@ -1,0 +1,13 @@
+@use "../utils/variables" as *;
+
+.link {
+  transition: $Transition;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $Soft-Red;
+  }
+}
